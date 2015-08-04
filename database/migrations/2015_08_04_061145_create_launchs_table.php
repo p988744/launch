@@ -16,11 +16,11 @@ class CreateLaunchsTable extends Migration
         {
             $table->increments('id');
             $table->string('name');
-            $table->string('type');
-            $table->string('timming');
+            $table->array('type');
+            $table->array('timming');
             $table->boolean('is_alive');
-            $table->numeric('price');
-            $table->numeric('location');
+            $table->string('price');
+            $table->string('location');
             $table->timestamps();
         
         });
