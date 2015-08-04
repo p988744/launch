@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Launch_model;
 
 class LaunchController extends Controller
 {
@@ -16,7 +17,8 @@ class LaunchController extends Controller
      */
     public function index()
     {
-        //
+        $query = Launch_model::all();
+        return view('restaurants.index', compact('query'));
     }
 
     /**
