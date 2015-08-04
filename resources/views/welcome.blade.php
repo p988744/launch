@@ -38,8 +38,9 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Laravel 5</div>
+                <div class="title">晚餐吃什麼？</div>
             </div>
+            <a href="restaurants">管理</a>
         </div>
     </body>
 </html>

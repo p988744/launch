@@ -28,7 +28,7 @@ class LaunchController extends Controller
      */
     public function create()
     {
-        //
+        return view('restaurants.create');
     }
 
     /**
@@ -39,7 +39,9 @@ class LaunchController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // return $request->all();
+        Launch_model::create($request->all());
+        return redirect('restaurants');
     }
 
     /**
