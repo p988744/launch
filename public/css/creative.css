@@ -474,3 +474,7 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #222;
 }
+
+.small-page-header{
+    min-height: 30em;
+}
