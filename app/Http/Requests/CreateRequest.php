@@ -13,7 +13,7 @@ class CreateRequest extends Request
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,7 @@ class CreateRequest extends Request
     public function rules()
     {
         return [
-            //
+            'name' => 'required'
         ];
     }
 }

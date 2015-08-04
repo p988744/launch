@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Launch_model;
+use App\Http\Requests\CreateRequest;
 
 class LaunchController extends Controller
 {
@@ -37,7 +38,7 @@ class LaunchController extends Controller
      * @param  Request  $request
      * @return Response
      */
-    public function store(Request $request)
+    public function store(CreateRequest $request)
     {
         // return $request->all();
         Launch_model::create($request->all());
@@ -63,7 +64,8 @@ class LaunchController extends Controller
      */
     public function edit($id)
     {
-        //
+        $query = Launch_model::find($id);
+        return view('restaurants.edit', compact('query'));
     }
 
     /**
@@ -73,9 +75,16 @@ class LaunchController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function update(Request $request, $id)
+    public function update(CreateRequest $request, $id)
     {
-        //
+        Launch_model::where('id', $id)->update([
+                'name' => $request->get('name'),
+                'type' => $request->get('type'),
+                'timming' => $request->get('timming'),
+                'price' => $request->get('price'),
+                'location' => $request->get('location')
+            ]);
+        return redirect('restaurants');
     }
 
     /**
