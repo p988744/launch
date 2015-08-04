@@ -12,7 +12,18 @@ class CreateLaunchsTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('launchs', function(Blueprint $table)
+        {
+            $table->increments('id');
+            $table->string('name');
+            $table->string('type');
+            $table->string('timming');
+            $table->boolean('is_alive');
+            $table->int('price');
+            $table->int('location');
+            $table->timestamps();
+        
+        });
     }
 
     /**
@@ -22,6 +33,6 @@ class CreateLaunchsTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('launchs');
     }
 }
