@@ -95,6 +95,7 @@ class LaunchController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Launch_model::destroy($id);
+        return redirect('restaurants');
     }
 }
