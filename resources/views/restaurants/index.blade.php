@@ -7,7 +7,7 @@
                 <h1>編輯餐廳資訊</h1>
                 <hr>
                 <p>餐廳資訊跟人的心一樣，常常是善變的，為了提供最好的建議，需要您的協助。</p>
-                <!-- <a href="#about" class="btn btn-primary btn-xl page-scroll">告訴我要吃什麼？</a> -->
+                <a href="{{ url('restaurants/create') }}" role="btn" class="btn btn-primary btn-xl">新增餐廳</a>
             </div>
         </div>
     </header>
@@ -15,14 +15,16 @@
 
 @section('content')
 	<section class="container">
-		<a href="{{ url('restaurants/create') }}" role="btn" class="btn btn-info">新增</a>
-		<table class="table table-hover">
+		<!-- <a href="{{ url('restaurants/create') }}" role="btn" class="btn btn-info">新增</a> -->
+		<table class="table table-striped table-hover">
 				<tr>
 					<th>餐廳名稱</th>
 					<th>食物類型</th>
 					<th>食用時機</th>
-					<th>餐廳價位<br>1=低於150元;2=150元~300元;3=高於300元</th>
-					<th>餐廳距離<br>1=近(0~15分鐘);2=中(15~30分鐘);3=高(30分鐘 up)</th>
+					<th>餐廳價位</th>
+					<th>走路距離</th>
+					<th></th>
+					<th></th>
 				</tr>
 			@foreach ( $query as $var )
 				<tr>
@@ -30,8 +32,46 @@
 					<td>{{$var -> name}}</td>
 					<td>{{$var -> type}}</td>
 					<td>{{$var -> timming}}</td>
-					<td>{{$var -> price}}</td>
-					<td>{{$var -> location}}</td>
+					<td>
+						<?php 
+							$price_is = $var -> price;
+
+							switch ($price_is) {
+								case '1':
+									echo '低於150元';
+									break;
+								case '2':
+									echo '150元~300元';
+									break;
+								case '3':
+									echo '高於300元';
+									break;
+								default:
+									echo '有Bug，快回報給我們';
+									break;
+							}
+						 ?>
+					</td>
+					<td>
+						<?php 
+							$location_is = $var -> location;
+
+							switch ($location_is) {
+								case '1':
+									echo '0~15分鐘';
+									break;
+								case '2':
+									echo '15~30分鐘';
+									break;
+								case '3':
+									echo '30分鐘以上';
+									break;
+								default:
+									echo '有Bug，快回報給我們';
+									break;
+							}
+						 ?>
+					</td>
 					<td><a href="{{ url('restaurants/'.$var->id.'/edit') }}" role="btn" class="btn btn-success">編輯</a></td>
 					<td>
 						<form action="{{ url('restaurants/'.$var->id) }}" method="POST">
