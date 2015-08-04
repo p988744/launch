@@ -19,8 +19,8 @@ class CreateLaunchsTable extends Migration
             $table->string('type');
             $table->string('timming');
             $table->boolean('is_alive');
-            $table->int('price');
-            $table->int('location');
+            $table->numeric('price');
+            $table->numeric('location');
             $table->timestamps();
         
         });
