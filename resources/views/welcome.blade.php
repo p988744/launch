@@ -40,21 +40,21 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
+                        <i class="fa fa-4x fa-money wow bounceIn text-primary"></i>
                         <h3>根據今晚的經濟狀況</h3>
                         <p class="text-muted">我們可以依照您想花費的預算，篩選出適合您的餐廳。</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <i class="fa fa-4x fa-hourglass-half wow bounceIn text-primary" data-wow-delay=".1s"></i>
                         <h3>根據擁有的吃飯時間</h3>
                         <p class="text-muted">我們能依照餐廳的距離，找出能符合您用餐時間的餐廳。</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <i class="fa fa-4x fa-clock-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
                         <h3>根據吃飯的時間點</h3>
                         <p class="text-muted">我們能依照您目前吃飯的時間點，篩選出有能力提供餐點的餐廳。</p>
                     </div>
