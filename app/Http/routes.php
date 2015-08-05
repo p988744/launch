@@ -16,3 +16,8 @@ Route::get('/', function () {
 });
 
 Route::resource('restaurants', 'LaunchController');
+
+Route::get('/coming', function () {
+    return view('restaurants.coming');
+});
+
