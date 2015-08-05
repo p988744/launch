@@ -4,10 +4,13 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>不知道今晚要吃什麼嗎？</h1>
+                <h1>不知道今天要吃什麼嗎？</h1>
                 <hr>
-                <p>為了解決這個世界難題，資料科學家們決定挺身而出，藉助科學的力量，幫助你決定今晚要吃什麼！</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">告訴我要吃什麼？</a>
+                <p>為了解決這個世界難題，工程師們決定挺身而出，藉助科學的力量，幫助你決定今天要吃什麼！</p>
+                <hr>
+                <h2>推薦一下</h2>
+                <a href="/random_result" class="btn btn-default btn-xl page-scroll">隨便吃</a>
+                <a href="/coming" class="btn btn-primary btn-xl page-scroll">我很挑</a>
             </div>
         </div>
     </header>
@@ -70,11 +73,28 @@
         </div>
     </section>
 
-    <section class="no-padding" id="portfolio">
+    <aside class="bg-dark-font-red">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>注意</h2>
+                <p>本專案為Laravel練習用專案，目前尚處實驗階段，餐廳以實踐大學台北校區周邊店家為主。</p>   
+            </div>
+        </div>
+    </aside>
+
+    <!-- <section class="no-padding" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">隨選推薦</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
         <div class="container-fluid">
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                    <a href="/coming" class="portfolio-box">
                         <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -89,7 +109,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                    <a href="/coming" class="portfolio-box">
                         <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -104,7 +124,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                    <a href="/coming" class="portfolio-box">
                         <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -119,7 +139,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                    <a href="/coming" class="portfolio-box">
                         <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -134,7 +154,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                    <a href="/coming" class="portfolio-box">
                         <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -149,7 +169,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                    <a href="/coming" class="portfolio-box">
                         <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -165,34 +185,8 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>有什麼不對勁的嗎？</h2>
-                <a href="#" class="btn btn-default btn-xl wow tada">告訴我們您的寶貴建議</a>
-            </div>
-        </div>
-    </aside>
 
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">願意為大家出一份力嗎？</h2>
-                    <hr class="primary">
-                    <p>不論您是程式高手、神奇的資料科學家、又或者是喜歡到處品嚐的老饕，只要您願意為煩惱吃什麼的廣大民眾出一份心力，歡迎與我們聯繫！</p>
-                </div>
-                <!-- <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                    <p>123-456-6789</p>
-                </div> -->
-                <div class="col-lg-12 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:p988744@gmail.com">p988744@gmail.com</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 @stop

@@ -60,6 +60,24 @@ p {
     background-color: #222;
 }
 
+.bg-dark-font-red {
+    color: #FF3C2A;
+    background-color: #222;
+}
+
+.bg-blue {
+    color: #fff;
+    background-color: #006DB2;
+}
+
+.bg-blue a{
+    color: #FFA019;
+}
+
+.bg-blue a:hover{
+    color: #FFC26B;
+}
+
 .text-faded {
     color: rgba(255,255,255,.7);
 }
