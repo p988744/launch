@@ -15,6 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::get('/food_type', 'LaunchController@get_type_list');
+
 Route::resource('restaurants', 'LaunchController');
 
 Route::get('/coming', function () {

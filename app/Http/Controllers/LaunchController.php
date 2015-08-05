@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Launch_model;
+use App\Food_type_list;
 use App\Http\Requests\CreateRequest;
 
 class LaunchController extends Controller
@@ -113,5 +114,12 @@ class LaunchController extends Controller
         $choose = rand(0,$total);
         $result_query = Launch_model::find($id_list[$choose]);
         return view('restaurants.random_result', compact('result_query'));
+    }
+
+    public function get_type_list()
+    {
+        $query = Food_type_list::all();
+        
+        return view('restaurants.food_type', compact('query'));
     }
 }
