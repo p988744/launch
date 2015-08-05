@@ -76,15 +76,6 @@
     @yield('content')
 
 
-    <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>有什麼不對勁的嗎？</h2>
-                <a href="/coming" class="btn btn-default btn-xl wow tada">告訴我們您的寶貴建議</a>
-            </div>
-        </div>
-    </aside>
-
     <section id="contact">
         <div class="container">
             <div class="row">
@@ -105,14 +96,16 @@
         </div>
     </section>
 
-    <aside class="bg-dark">
+     <aside class="bg-dark">
         <div class="container text-center">
             <div class="call-to-action">
-                <h2>注意</h2>
-                <p>本專案為Laravel練習用專案，目前尚處實驗階段，餐廳以實踐大學台北校區周邊店家為主。</p>   
+                <h2>有什麼不對勁的嗎？</h2>
+                <a href="/coming" class="btn btn-default btn-xl wow tada">告訴我們您的寶貴建議</a>
             </div>
         </div>
     </aside>
+
+    
 
     <!-- jQuery -->
     <script src="{{ URL::asset('js/jquery.js') }}"></script>

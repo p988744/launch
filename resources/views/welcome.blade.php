@@ -73,7 +73,16 @@
         </div>
     </section>
 
-    <section class="no-padding" id="portfolio">
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>注意</h2>
+                <p>本專案為Laravel練習用專案，目前尚處實驗階段，餐廳以實踐大學台北校區周邊店家為主。</p>   
+            </div>
+        </div>
+    </aside>
+
+    <!-- <section class="no-padding" id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -176,7 +185,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     
