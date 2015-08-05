@@ -27,7 +27,6 @@
 							$price_is = $result_query -> price;
 
 							switch ($price_is) {
-\
 								case '0':
 									echo '150元以下';
 									break;
