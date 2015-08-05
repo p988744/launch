@@ -63,6 +63,7 @@
 						 ?>
                    		會到<srtong></p>	
                    		<hr>
+                   		<a target="_blank" href="{{ url('https://www.google.com.tw/?gfe_rd=cr&ei=rI_BVfyXCo2S9QXVsIP4DA&gws_rd=ssl#newwindow=1&q='.$result_query -> name.' 菜單') }}" class="btn btn-info btn-xl page-scroll">幫我google菜單</a>
                    		<a href="/random_result" class="btn btn-success btn-xl page-scroll">再來一次</a>
                 </div>
             </div>

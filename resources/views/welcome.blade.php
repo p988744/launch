@@ -73,7 +73,7 @@
         </div>
     </section>
 
-    <aside class="bg-dark">
+    <aside class="bg-dark-font-red">
         <div class="container text-center">
             <div class="call-to-action">
                 <h2>注意</h2>
