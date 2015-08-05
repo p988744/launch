@@ -74,6 +74,14 @@
     </section>
 
     <section class="no-padding" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">隨選推薦</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
         <div class="container-fluid">
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">

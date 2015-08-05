@@ -105,6 +105,15 @@
         </div>
     </section>
 
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>注意</h2>
+                <p>本專案為Laravel練習用專案，目前尚處實驗階段，餐廳以實踐大學台北校區周邊店家為主。</p>   
+            </div>
+        </div>
+    </aside>
+
     <!-- jQuery -->
     <script src="{{ URL::asset('js/jquery.js') }}"></script>
 
