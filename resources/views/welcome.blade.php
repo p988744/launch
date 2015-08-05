@@ -9,7 +9,7 @@
                 <p>為了解決這個世界難題，資料科學家們決定挺身而出，藉助科學的力量，幫助你決定今天要吃什麼！</p>
                 <hr>
                 <h2>推薦一下吧</h2>
-                <a href="/coming" class="btn btn-default btn-xl page-scroll">隨便吃</a>
+                <a href="/random_result" class="btn btn-default btn-xl page-scroll">隨便吃</a>
                 <a href="/coming" class="btn btn-primary btn-xl page-scroll">我很挑</a>
             </div>
         </div>

@@ -21,3 +21,4 @@ Route::get('/coming', function () {
     return view('restaurants.coming');
 });
 
+Route::get('/random_result', 'LaunchController@random_choose');

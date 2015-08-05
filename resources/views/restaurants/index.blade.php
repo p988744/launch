@@ -28,7 +28,6 @@
 				</tr>
 			@foreach ( $query as $var )
 				<tr>
-					<!-- <td>{{$var -> id}}</td> -->
 					<td>{{$var -> name}}</td>
 					<td>{{$var -> type}}</td>
 					<td>{{$var -> timming}}</td>

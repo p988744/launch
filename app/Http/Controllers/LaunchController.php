@@ -98,4 +98,20 @@ class LaunchController extends Controller
         Launch_model::destroy($id);
         return redirect('restaurants');
     }
+
+
+    public function random_choose()
+    {
+        $query = Launch_model::all();
+        $id_list= array();
+        $i=0;
+        foreach ($query as $var) {
+            $id_list[$i] =  $var -> id;  
+            $i++;
+        }
+        $total=count($query)-1;
+        $choose = rand(0,$total);
+        $result_query = Launch_model::find($id_list[$choose]);
+        return view('restaurants.random_result', compact('result_query'));
+    }
 }
