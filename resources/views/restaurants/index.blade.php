@@ -36,14 +36,14 @@
 							$price_is = $var -> price;
 
 							switch ($price_is) {
+								case '0':
+									echo '低於100元';
+									break;
 								case '1':
-									echo '低於150元';
+									echo '100~300元左右';
 									break;
 								case '2':
-									echo '150元~300元';
-									break;
-								case '3':
-									echo '高於300元';
+									echo '300元以上';
 									break;
 								default:
 									echo '有Bug，快回報給我們';
@@ -56,13 +56,13 @@
 							$location_is = $var -> location;
 
 							switch ($location_is) {
-								case '1':
+								case '0':
 									echo '0~15分鐘';
 									break;
-								case '2':
+								case '1':
 									echo '15~30分鐘';
 									break;
-								case '3':
+								case '2':
 									echo '30分鐘以上';
 									break;
 								default:

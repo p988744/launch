@@ -30,16 +30,84 @@
                     <label for="food_timming">食用時機：</label>
                     時機：<input type="text" name="timming" class="form-control" id="food_timming" value="{{ $query -> timming }}">(ex. 午餐,晚餐)
                 </div>
-                    <input type="hidden" name="is_alive" class="form-control" value="1">
+                <input type="hidden" name="is_alive" class="form-control" value="1">
+
+                <!-- price switch-->
                 <div class="form-group">
                     <label for="food_price">餐廳價位：</label>
-                    <input type="text" name="price" class="form-control" id="food_price" value="{{ $query -> price }}">(1=低(0~150);2=中(150~300);3=高(300 up))
-                </div>
+                    <?php 
+                        switch ($query -> price) {
+                            case '0':
+                                echo '                                    
+                                    <input type="radio" name="price" value="0" checked="checked"><label>低於100元</label>
+                                    <input type="radio" name="price" value="1"><label>100~300元</label>
+                                    <input type="radio" name="price" value="2"><label>300元以上</label>
+                                    
+                                ';
+                                break;
+                            case '1':
+                                echo '
+                                    <input type="radio" name="price" value="0""><label>低於100元</label>
+                                    <input type="radio" name="price" value="1" checked="checked"><label>100~300元</label>
+                                    <input type="radio" name="price" value="2"><label>300元以上</label>
+                                ';
+                                break;
+                            case '2':
+                                echo '
+                                    <input type="radio" name="price" value="0"><label>低於100元</label>
+                                    <input type="radio" name="price" value="1"><label>100~300元</label>
+                                    <input type="radio" name="price" value="2" checked="checked"><label>300元以上</label>
+                                    
+                                ';
+                                break;
+                            
+                            default:
+                                echo '有Bug，快回報給我們';
+                                break;
+                        }
+                     ?>
+                 </div>
+
+                 <!-- location switch-->
                 <div class="form-group">
                     <label for="food_location">餐廳距離：</label>
-                    <input type="text" name="location" class="form-control" id="food_location" value="{{ $query -> location }}">(1=近(0~15分鐘);2=中(15~30分鐘);3=高(30分鐘 up))<br>
+                    <?php 
+                        switch ($query -> location) {
+                            case '0':
+                                echo '                                    
+                                    <input type="radio" name="location" id="food_location" value="0"  checked="checked"><label>0~15分鐘</label>
+                                    <input type="radio" name="location" id="food_location" value="1" ><label>15~30分鐘</label>
+                                    <input type="radio" name="location" id="food_location" value="2"><label>30分鐘以上</label>
+                                    
+                                ';
+                                break;
+                            case '1':
+                                echo '
+                                    <input type="radio" name="location" id="food_location" value="0"><label>0~15分鐘</label>
+                                    <input type="radio" name="location" id="food_location" value="1" checked="checked"><label>15~30分鐘</label>
+                                    <input type="radio" name="location" id="food_location" value="2"><label>30分鐘以上</label>
+                                ';
+                                break;
+                            case '2':
+                                echo '
+                                    <input type="radio" name="location" id="food_location" value="0"><label>0~15分鐘</label>
+                                    <input type="radio" name="location" id="food_location" value="1"><label>15~30分鐘</label>
+                                    <input type="radio" name="location" id="food_location" value="2" checked="checked"><label>30分鐘以上</label>
+                                    
+                                ';
+                                break;
+                            
+                            default:
+                                echo '有Bug，快回報給我們';
+                                break;
+                        }
+                    ?>
+                    
                 </div>
-                <input type="submit" value="送出" class="btn">
+                <p>
+                    <input type="submit" value="送出" class="btn btn-success">
+                    <a href="{{ url('restaurants/') }}" role="btn" class="btn">取消</a>
+                </p>
             </form>
         </div>
     </section>

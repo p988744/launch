@@ -33,13 +33,20 @@
                     <input type="hidden" name="is_alive" class="form-control" value="1">
                 <div class="form-group">
                     <label for="food_price">餐廳價位：</label>
-                    <input type="text" name="price" class="form-control" id="food_price" placeholder="(1=低(0~150);2=中(150~300);3=高(300 up))">
+                    <input type="radio" name="price" id="food_price" value="0" checked><label>低於100元</label>
+                    <input type="radio" name="price" id="food_price" value="1" ><label>100~300元</label>
+                    <input type="radio" name="price" id="food_price" value="2"><label>300元以上</label>
                 </div>
                 <div class="form-group">
                     <label for="food_location">餐廳距離：</label>
-                    <input type="text" name="location" class="form-control" id="food_location" placeholder="(1=近(0~15分鐘);2=中(15~30分鐘);3=高(30分鐘 up))">
+                    <input type="radio" name="location" id="food_location" value="0" checked><label>0~15分鐘</label>
+                    <input type="radio" name="location" id="food_location" value="1" ><label>15~30分鐘</label>
+                    <input type="radio" name="location" id="food_location" value="2"><label>30分鐘以上</label>
                 </div>
-                <input type="submit" value="送出" class="btn">
+                <p>
+                    <input type="submit" value="送出" class="btn btn-success">
+                    <a href="{{ url('restaurants/') }}" role="btn" class="btn">取消</a>
+                </p>
             </form>
         </div>
     </section>

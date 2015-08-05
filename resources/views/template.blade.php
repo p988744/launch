@@ -53,13 +53,13 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
+                        <a class="page-scroll" href="/random_result">隨選推薦</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="/restaurants">編輯餐廳</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="/#services">如何篩選</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="/#portfolio">隨選推薦</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="/#contact">聯絡我們</a>

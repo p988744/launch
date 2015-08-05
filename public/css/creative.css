@@ -70,6 +70,10 @@ p {
     background-color: #006DB2;
 }
 
+.bg-blue a{
+    color: #FFA019;
+}
+
 .bg-blue a:hover{
     color: #FFC26B;
 }

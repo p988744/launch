@@ -6,9 +6,9 @@
             <div class="header-content-inner">
                 <h1>不知道今天要吃什麼嗎？</h1>
                 <hr>
-                <p>為了解決這個世界難題，資料科學家們決定挺身而出，藉助科學的力量，幫助你決定今天要吃什麼！</p>
+                <p>為了解決這個世界難題，工程師們決定挺身而出，藉助科學的力量，幫助你決定今天要吃什麼！</p>
                 <hr>
-                <h2>推薦一下吧</h2>
+                <h2>推薦一下</h2>
                 <a href="/random_result" class="btn btn-default btn-xl page-scroll">隨便吃</a>
                 <a href="/coming" class="btn btn-primary btn-xl page-scroll">我很挑</a>
             </div>
