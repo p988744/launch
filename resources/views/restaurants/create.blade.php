@@ -28,7 +28,11 @@
                 </div>
                 <div class="form-group">
                     <label for="food_timming">食用時機：</label>
+<<<<<<< HEAD
                     <input type="text" name="timming" class="form-control" id="food_timming" placeholder="(ex. 午餐,晚餐)">
+=======
+                    時機：<input type="text" name="timming" class="form-control" id="food_timming" placeholder="(ex. 午餐,晚餐)">
+>>>>>>> 604a1cf1d5ce8ef9cc9f755baacffd4991eac872
                 </div>
                     <input type="hidden" name="is_alive" class="form-control" value="1">
                 <div class="form-group">

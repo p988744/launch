@@ -115,6 +115,7 @@ class LaunchController extends Controller
         $result_query = Launch_model::find($id_list[$choose]);
         return view('restaurants.random_result', compact('result_query'));
     }
+<<<<<<< HEAD
 
     public function get_type_list()
     {
@@ -122,4 +123,6 @@ class LaunchController extends Controller
         
         return view('restaurants.food_type', compact('query'));
     }
+=======
+>>>>>>> 604a1cf1d5ce8ef9cc9f755baacffd4991eac872
 }

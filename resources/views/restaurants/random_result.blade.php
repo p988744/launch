@@ -27,6 +27,7 @@
 							$price_is = $result_query -> price;
 
 							switch ($price_is) {
+<<<<<<< HEAD
 								case '0':
 									echo '150元以下';
 									break;
@@ -34,6 +35,15 @@
 									echo '150元~300元';
 									break;
 								case '2':
+=======
+								case '1':
+									echo '150元以下';
+									break;
+								case '2':
+									echo '150元~300元';
+									break;
+								case '3':
+>>>>>>> 604a1cf1d5ce8ef9cc9f755baacffd4991eac872
 									echo '高於300元';
 									break;
 								default:
@@ -47,6 +57,7 @@
 							$location_is = $result_query -> location;
 
 							switch ($location_is) {
+<<<<<<< HEAD
 								case '0':
 									echo '15分鐘以內';
 									break;
@@ -54,6 +65,15 @@
 									echo '15~30分鐘';
 									break;
 								case '2':
+=======
+								case '1':
+									echo '15分鐘以內';
+									break;
+								case '2':
+									echo '15~30分鐘';
+									break;
+								case '3':
+>>>>>>> 604a1cf1d5ce8ef9cc9f755baacffd4991eac872
 									echo '30分鐘以上';
 									break;
 								default:
